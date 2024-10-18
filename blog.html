@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title> impresate</title>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="main_header">
+            <div class="row">
+                <a class="logo" href="#">Impresate</a>
+                <div class="icon">
+                    <div class="hamburgerw"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="blog.html" class="active">Ing & Arq</a></li>
+                        <li><a href="">Diseño</a></li>
+                        <li><a href="">Portafolio</a></li>
+                        <li><a href="">Colaborar</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="hero">
+            <div class="parallax-overlay"></div>
+            <h1>
+                <span>INGENIERIA Y DISEÑO</span>
+                <br>ELEGANCIA & CREATIVIDAD
+            </h1>
+            <a href="" class="social_fb">facebook</a>
+            <a href="" class="social_tw">twitter</a>
+            <a href="" class="social_ins">instagram</a>
+        </div>
+        <div class="separator"></div>
+        <!-- Start class row/content class-->
+        <div class="row">
+            <div class="content">
+                <div class="column-left">
+                    <section class="post_blog">
+                        <div class="post_date">
+                            <span>24</span>
+                            <p>Feb</p>
+                        </div>
+                        <h3 class="title_post">CivilCAD para tus proyectos de Ingeniería.</h3>
+                        <img class="post_img" src="images/Banner_CivilCAD_2019.jpg">
+                        <div class="post_tags">
+                            <p>Ingenieria, Diseño, Arte</p>
+                        </div>
+                        <p>
+                            CivilCad es un modulo diseñado para facilitar y
+                            agilizar el trabajo del Ingeniero Civil o Topografo a
+                            la hora de realizar sus poryectos en gabinete. 
+                            Simplifican las tareas dentro de AutoCAD® Full, 
+                            BricsCAD® PRO/Platinum y ZWCAD+ Professional.
+                        </p>
+                        <a target="_blank" href="civilcad-para-tus-proyectos.html" class="animated-button read_more">Seguir leyendo ...</a>
+                        <div class="line80"></div>
+                    </section>                 
+                </div>
+                <div class="sidebar-right">
+                    <div class="box_sidebar">
+                        Estamos iniciando ... Bienvenido
+                    </div>
+                </div>
+            </div>
+        </div><!-- End row class -->
+        <footer class="footer-section">
+            <div class="row">
+                <div class="line-separator"></div>
+                <div class="order-1">
+                    <div class="footer-single-widget">
+                        <ul class="social-menu">
+                                <li><a title="facebook" href="#"><i class="fa icon-facebook"></i></a></li>
+                                <li><a title="twitter" href="#"><i class="fa icon-twitter"></i></a></li>
+                                <li><a title="instagram" href="#"><i class="fa icon-google-plus"></i></a></li>
+                                <li><a title="linkedin" href="#"><i class="fa icon-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="order-2">
+                    <div class="copy-right-info">
+                        <p>All rights reserved &copy; <a href="" target="_blank">impresate</a>, 2018</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<script>
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $('.main_header').addClass('sticky');
+        $('.logo').addClass('logoblack')
+        $('.hamburgerw').addClass('hamburger')
+    } else {
+        $('.main_header').removeClass('sticky');
+        $('.logo').removeClass('logoblack');
+        $('.hamburgerw').removeClass('hamburger');
+    }
+});
+$('.hamburgerw').click(function () {
+    if ($('.main_header').hasClass('open-nav')) {
+        $('.main_header').removeClass('open-nav');
+    } else {
+        $('.main_header').addClass('open-nav');
+    }
+});
+$('.main_h li a').click(function () {
+    if ($('.main_header').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_header').removeClass('open-nav');
+    }
+});
+//@ sourceURL=pen.js
+    $('.icon').click(function(){
+        $('.icon').toggleClass('active')
+    });
+</script>
+<script src="css/css_live_reload_inits.js"></script>
+</body>
+</html>
